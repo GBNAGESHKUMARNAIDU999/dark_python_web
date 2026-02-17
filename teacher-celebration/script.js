@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.random() * (max - min) + min;
     }
 
+    const colors = ['#00f2ff', '#7000ff'];
+
     const interval = setInterval(function () {
         const timeLeft = animationEnd - Date.now();
 
@@ -16,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const particleCount = 50 * (timeLeft / duration);
-        confetti(Object.assign({}, defaults, { particleCount, origin: { x: random(0.1, 0.3), y: Math.random() - 0.2 } }));
-        confetti(Object.assign({}, defaults, { particleCount, origin: { x: random(0.7, 0.9), y: Math.random() - 0.2 } }));
+        confetti(Object.assign({}, defaults, { particleCount, colors, origin: { x: random(0.1, 0.3), y: Math.random() - 0.2 } }));
+        confetti(Object.assign({}, defaults, { particleCount, colors, origin: { x: random(0.7, 0.9), y: Math.random() - 0.2 } }));
     }, 250);
 
-    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+    confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 }, colors });
 
     // Scroll Reveal Animation & Stats Trigger
     const observerOptions = { threshold: 0.1 };

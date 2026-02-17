@@ -8,10 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dist/output.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
@@ -56,7 +55,7 @@
         </section>
 
         <section id="about" class="about-section">
-            <div class="container">
+            <div class="container glass-card about-container">
                 <h2 class="section-title python-title"><span class="keyword">class</span> <span
                         class="title-text">Mentor</span>(<span class="arg">Teacher</span>):</h2>
                 <p class="about-text">
@@ -94,7 +93,7 @@
             <div class="container">
                 <h2 class="section-title python-title"><span class="keyword">def</span> <span
                         class="function-title">impact</span>(<span class="arg">students</span>):</h2>
-                <div class="code-block-container" data-tilt>
+                <div class="code-block-container glass-card" data-tilt>
                     <div class="code-header">
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
@@ -114,7 +113,7 @@ greeting()
                     </code></pre>
                 </div>
                 <!-- Terminal Output -->
-                <div class="terminal-output" data-tilt>
+                <div class="terminal-output glass-card" data-tilt>
                     <div class="terminal-header">
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
@@ -197,7 +196,7 @@ greeting()
                         class="function-title">memories</span>():</h2>
                 <div class="gallery-grid">
                     <!-- Python script to generate this: for i in range(1, 20): print(f'<img src="assets/mem-{i}.jpg" loading="lazy" alt="Memory {i}" class="gallery-img">') -->
-                    <img src="assets/py.jpeg" loading="lazy" alt="Python Memory" class="gallery-img" data-tilt>
+
                     <img src="assets/n1.jpg" loading="lazy" alt="Memory New 1" class="gallery-img" data-tilt>
                     <img src="assets/n2.jpg" loading="lazy" alt="Memory New 2" class="gallery-img" data-tilt>
                     <img src="assets/n3.jpg" loading="lazy" alt="Memory New 3" class="gallery-img" data-tilt>
@@ -229,19 +228,19 @@ greeting()
                 <h2 class="section-title python-title"><span class="built_in">print</span>(<span
                         class="arg">student_feedback</span>)</h2>
                 <div class="messages-grid">
-                    <div class="message-card" data-tilt>
+                    <div class="message-card glass-card" data-tilt>
                         <p>"You made Python feel like a superpower. Thank you for everything!"</p>
                         <span class="author">- Student 1</span>
                     </div>
-                    <div class="message-card" data-tilt>
+                    <div class="message-card glass-card" data-tilt>
                         <p>"Best teacher ever! Your classes were always the highlight of my day."</p>
                         <span class="author">- Student 2</span>
                     </div>
-                    <div class="message-card" data-tilt>
+                    <div class="message-card glass-card" data-tilt>
                         <p>"I never thought I'd understand coding until I took your class."</p>
                         <span class="author">- Student 3</span>
                     </div>
-                    <div class="message-card" data-tilt>
+                    <div class="message-card glass-card" data-tilt>
                         <p>"Thank you for being so patient with our endless questions."</p>
                         <span class="author">- Student 4</span>
                     </div>
